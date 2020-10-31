@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <p v-bind:class>エラーです</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <img v-bind:src="img_src">
+
+  <script>
+    var app = new Vue({
+      el: "#app",
+      data: {
+        error_class: "error",
+        img_src: 'img01.png'
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# {{}} マシュタッス記号
+  ・<html>のタグの中でしか使えない
+
+v-if v-on v-bindディレクティブ
+
+# v-bind
+<p v-bind:class="error_class"> class属性をviewでbindしますよって意味</p>
